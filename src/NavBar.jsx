@@ -2,7 +2,6 @@ import React from 'react'
 import MyTheme from './MyTheme';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import SearchIcon from '@material-ui/icons/Search';
@@ -12,10 +11,10 @@ import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
 import InputBase from '@material-ui/core/InputBase';
-import { GoogleLogin } from 'react-google-login';
 import { FacebookLoginButton } from "react-social-login-buttons";
 import { GoogleLoginButton } from "react-social-login-buttons";
-import SimpleImageSlider from "react-simple-image-slider";
+
+import { BrowserRouter as Router, Route} from "react-router-dom";
 
 const responseGoogle = (response) => {
   console.log(response);
@@ -112,11 +111,12 @@ const useStyles = makeStyles(theme => ({
 // mongodb+srv://SetSpaceDevs:ssd@cluster0-mw8uo.mongodb.net/test?retryWrites=true&w=majority
 
 
-const MainPage = () => {
+const NavBar = () => {
     const classes = useStyles(); // Using resources
     return(
         <div>
-            <section className="Bg-image">
+    
+            
                 {/* The style prop to override default color palette */}
                 <AppBar position="static" style={MyTheme.palette.appBar}>
                     <Toolbar>
@@ -147,71 +147,9 @@ const MainPage = () => {
                     <Button color="inherit">Login</Button>
                     </Toolbar>
                 </AppBar>
-                <p className="title-text big-text">
-                      Get Inspired.  
-                </p>
-
-
-                <Card className={classes.card}>
-                <CardContent>
-                  <p color="textPrimary" className="card-head-text">
-                    Start Exploring
-                  </p>
-                  <Typography variant="h5" component="h2">
-                  </Typography>
-                  </CardContent>
-                  <div className={classes.search}>
-                        <div className={classes.searchIcon}>
-                              <PersonIcon />
-                          </div>
-                          <InputBase
-                              placeholder="Username"
-                              classes={{
-                                  root: classes.inputRoot,
-                                  input: classes.inputInput,
-                              }}
-                              inputProps={{ 'aria-label': 'Username' }}
-                          />
-                      </div>
-                    <div className={classes.grow} />
-                    <div className={classes.search}>
-                        <div className={classes.searchIcon}>
-                              <FingerprintIcon />
-                          </div>
-                          <InputBase
-                              placeholder="Password"
-                              type="password"
-                              classes={{
-                                  root: classes.inputRoot,
-                                  input: classes.inputInput,
-                              }}
-                              inputProps={{ 'aria-label': 'Password' }}
-                          />
-                      </div>
-                    <div className={classes.grow} />
-
-                    <br />
-                    <br />
-
-                    <Button style={MyTheme.palette.wideBtn}>Sign Up</Button>
-                    <p>
-
-                    </p>
-
-                    <p>
-
-                    </p>
-                    <GoogleLoginButton align="center"  text="Continue with Google" className="social-sign-in-btn" onClick={() => alert("Hello Google Log in")} />
-                    <FacebookLoginButton align="center" text="Continue with Facebook" className="social-sign-in-btn" onClick={() => alert("Hello Facebook Log in")} />
-
-
-                </Card>
-                
-            </section>
-
                 
 
           </div>
     )
 }
-export default MainPage;
+export default NavBar;

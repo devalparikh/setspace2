@@ -28,18 +28,21 @@ router.route('/add').post((req, res) => {
   .catch(err => res.status(400).json('Error: ' + err));
 });
 
+// Get specific post by id 
 router.route('/:id').get((req, res) => {
   Post.findById(req.params.id)
     .then(post => res.json(post))
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
+// Delete by given id of post
 router.route('/:id').delete((req, res) => {
   Post.findByIdAndDelete(req.params.id)
     .then(() => res.json('Post deleted.'))
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
+// Update specific post by id
 router.route('/update/:id').post((req, res) => {
   Post.findById(req.params.id)
     .then(post => {
