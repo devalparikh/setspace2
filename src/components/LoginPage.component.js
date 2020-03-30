@@ -1,5 +1,5 @@
 import React from 'react'
-import MyTheme from './MyTheme';
+import MyTheme from '../MyTheme';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
@@ -116,14 +116,14 @@ const LandingPage = () => {
             <section className="Bg-image">
                 {/* The style prop to override default color palette */}
                 <p style={{ marginTop: '-70px' }} className="title-text big-text">
-                      Get Inspired.  
+                      Welcome.  
                 </p>
 
 
                 <Card className={classes.card}>
                 <CardContent>
                   <p color="textPrimary" className="card-head-text">
-                    Start Exploring
+                    Login
                   </p>
                   <Typography variant="h5" component="h2">
                   </Typography>
@@ -161,7 +161,7 @@ const LandingPage = () => {
                     <br />
                     <br />
 
-                    <center><Button style={MyTheme.palette.wideBtn}>Sign Up</Button></center>
+                    <center><Button style={MyTheme.palette.wideBtn}>Login</Button></center>
                     <p>
 
                     </p>
@@ -171,7 +171,7 @@ const LandingPage = () => {
                     </p>
                     <GoogleLoginButton align="center"  text="Continue with Google" className="social-sign-in-btn" onClick={() => alert("Hello Google Log in")} />
                     <FacebookLoginButton align="center" text="Continue with Facebook" className="social-sign-in-btn" onClick={() => alert("Hello Facebook Log in")} />
-
+                    <center><a style={{ margin: "5rem" }} href="/">Sign Up</a></center>
 
                 </Card>
                 
