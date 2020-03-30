@@ -130,8 +130,11 @@ const NavBar = () => {
                     <div className={classes.grow} />
 
                     {/* AppBar Nav Buttons */}
+                    <Button color="inherit">Home</Button>
                     <Button color="inherit">Explore</Button>
-                    <Button href="/about" color="inherit">About</Button>
+                    <Button color="inherit">Notifications</Button>
+                    <Button color="inherit">Profile</Button>
+              
                     <Button href="/login" color="inherit">Login</Button>
                     </Toolbar>
                 </AppBar>
