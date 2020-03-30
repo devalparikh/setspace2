@@ -131,7 +131,7 @@ const NavBar = () => {
 
                     {/* AppBar Nav Buttons */}
                     <Button color="inherit">Explore</Button>
-                    <Button color="inherit">About</Button>
+                    <Button href="/about" color="inherit">About</Button>
                     <Button href="/login" color="inherit">Login</Button>
                     </Toolbar>
                 </AppBar>

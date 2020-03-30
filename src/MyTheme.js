@@ -21,7 +21,7 @@ export default createMuiTheme({
             contrastText: '#000',
         },
         appBar: { 
-            //backgroundColor: '#282c3400', // Transparent
+            // backgroundColor: '#282c3400', // Transparent
             backgroundColor: 'black',
             fontWeight: '700',
             boxShadow: 'none',
