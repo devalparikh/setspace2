@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <div className="app">
-        <NavBar title="SetSpace"></NavBar>
+        <NavBar color="black" title="SetSpace"></NavBar>
         <Route path="/" exact component={LandingPage} />
         <Route path="/login" component={LoginPage} />
         {/* <Route path="/edit/:id" component={EditExercise} />

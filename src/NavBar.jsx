@@ -105,8 +105,6 @@ const NavBar = () => {
     const classes = useStyles(); // Using resources
     return(
         <div>
-    
-            
                 {/* The style prop to override default color palette */}
                 <AppBar position="static" style={MyTheme.palette.appBar}>
                     <Toolbar>

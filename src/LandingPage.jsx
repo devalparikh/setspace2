@@ -29,7 +29,7 @@ const images = [
 // Resources for AppBar and Card
 const useStyles = makeStyles(theme => ({
     card: {
-      top: '17rem',
+      top: '12rem',
       marginRight: '8rem',
       position: 'absolute',
       right: '0',
