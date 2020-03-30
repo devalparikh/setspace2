@@ -139,6 +139,13 @@
   line-height: 45rem;
 }
 
+.big-text2 {
+  font-weight: 700;
+  font-size: 4vw;
+  height: 300px;
+  line-height: 54rem;
+}
+
 .card-head-text {
   font-weight: 700;
   font-size: 1.4vw;
