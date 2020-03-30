@@ -113,7 +113,7 @@ const LandingPage = () => {
     const classes = useStyles(); // Using resources
     return(
         <div>
-            <section className="Bg-image">
+            <section className="Bg-image-landing">
                 {/* The style prop to override default color palette */}
                 <p style={{ marginTop: '-70px' }} className="title-text big-text">
                       Get Inspired.  

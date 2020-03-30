@@ -23,8 +23,19 @@
   color: #61dafb;
 }
 
-.Bg-image {
+.Bg-image-landing {
   background: url(./imgs/bg2.jpg) no-repeat center center fixed;
+  background-color: rgba(24, 19, 19, 0.3);
+  background-blend-mode: darken;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 60rem;
+}
+
+.Bg-image-login {
+  background: url(./imgs/bg234.jpg) no-repeat center center fixed;
   background-color: rgba(24, 19, 19, 0.3);
   background-blend-mode: darken;
   -webkit-background-size: cover;
