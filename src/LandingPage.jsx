@@ -171,7 +171,7 @@ const LandingPage = () => {
                     </p>
                     <GoogleLoginButton align="center"  text="Continue with Google" className="social-sign-in-btn" onClick={() => alert("Hello Google Log in")} />
                     <FacebookLoginButton align="center" text="Continue with Facebook" className="social-sign-in-btn" onClick={() => alert("Hello Facebook Log in")} />
-
+                    <center> <b>Already have an account? <a href="/login">Sign In</a> </b></center>
 
                 </Card>
                 
