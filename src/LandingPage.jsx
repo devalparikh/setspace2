@@ -123,7 +123,7 @@ const LandingPage = () => {
                 <Card className={classes.card}>
                 <CardContent>
                   <p color="textPrimary" className="card-head-text">
-                    Start Exploring
+                   First time here?
                   </p>
                   <Typography variant="h5" component="h2">
                   </Typography>
