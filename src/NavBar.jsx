@@ -30,17 +30,7 @@ const images = [
 
 // Resources for AppBar and Card
 const useStyles = makeStyles(theme => ({
-    card: {
-      top: '17rem',
-      marginRight: '8rem',
-      position: 'absolute',
-      right: '0',
-      margin: 10,
-      alignContent: 'center',
-      minHeight: 400,
-      width: 364,
-      minWidth: 275,
-    },
+    
     title: {
       fontSize: 14,
     },
@@ -144,7 +134,7 @@ const NavBar = () => {
                     {/* AppBar Nav Buttons */}
                     <Button color="inherit">Explore</Button>
                     <Button color="inherit">About</Button>
-                    <Button color="inherit">Login</Button>
+                    <Button href="/login" color="inherit">Login</Button>
                     </Toolbar>
                 </AppBar>
                 
