@@ -19,6 +19,7 @@ export default class AboutPage extends Component {
     return (
       <div>
         <p>hello</p>
+        <p>hi steve</p>
       </div>
     )
   }
