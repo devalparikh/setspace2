@@ -110,9 +110,9 @@ const NavBar = () => {
                 <AppBar href='/' position="static" style={MyTheme.palette.appBar}>
                     <Toolbar>
                         {/* Logo/MainTitle */}
-                        <Typography variant="title" color="inherit">
-                            SETSPACE
-                        </Typography>
+                        <Button href ='/home' variant="title" color="inherit"> {/* Changed Typography to Button */}
+                            <strong>SETSPACE</strong>
+                        </Button>
 
                         {/* Search */}
                         <div className={classes.search}>
@@ -131,12 +131,11 @@ const NavBar = () => {
                     <div className={classes.grow} />
 
                     {/* AppBar Nav Buttons */}
-                    <Button href="/home" color="inherit">Home</Button>
-                    <Button color="inherit">Explore</Button>
-                    <Button color="inherit">Notifications</Button>
-                    <Button color="inherit">Profile</Button>
-              
-                    <Button href="/login" color="inherit">Login</Button>
+                    <Button href= "/home" color="inherit">Home</Button> {/* /home path for Home button*/}
+                    <Button href= "/explore" color="inherit">Explore</Button> {/* /explore path for Explore button*/}
+                    <Button href= "/noti" color="inherit">Notifications</Button> {/* /noti path for Notification button*/}
+                    <Button href= "/profile" color="inherit">Profile</Button> {/* /profile path for Profile button*/}            
+                    <Button href= "/login" color="inherit">Login</Button> {/* /login path for Login button*/}
                     </Toolbar>
                 </AppBar>
                 
