@@ -14,6 +14,7 @@ import InputBase from '@material-ui/core/InputBase';
 import { FacebookLoginButton } from "react-social-login-buttons";
 import { GoogleLoginButton } from "react-social-login-buttons";
 
+
 import { BrowserRouter as Router, Route} from "react-router-dom";
 
 const responseGoogle = (response) => {
@@ -106,7 +107,7 @@ const NavBar = () => {
     return(
         <div>
                 {/* The style prop to override default color palette */}
-                <AppBar position="static" style={MyTheme.palette.appBar}>
+                <AppBar href='/' position="static" style={MyTheme.palette.appBar}>
                     <Toolbar>
                         {/* Logo/MainTitle */}
                         <Typography variant="title" color="inherit">
