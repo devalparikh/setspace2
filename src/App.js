@@ -14,6 +14,7 @@ function App() {
         <Route path="/" exact component={LandingPage} />
         <Route path="/login" component={LoginPage} />
         <Route path="/about" component={AboutPage} />
+        <Route path="/home" component={LandingPage} />
         {/* <Route path="/edit/:id" component={EditExercise} />
         <Route path="/create" component={CreateExercise} />
         <Route path="/user" component={CreateUser} /> */}
