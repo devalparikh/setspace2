@@ -24,9 +24,9 @@ export default class HomePage extends Component {
     return (
       <div>
 
-        
+        <h3 style={{ paddingLeft: 40, paddingTop: 20, fontWeight: 700, fontSize: 50}}>Trending Now</h3>
 
-        <CardDeck style={{ paddingLeft: 40, paddingRight: 40, paddingTop: 40 }}>
+        <CardDeck style={{ paddingLeft: 40, paddingRight: 40, paddingTop: 20 }}>
           <Card>
             <CardImg top width="100%" src={require("./../imgs/bg1.jpg")} />
             <CardBody>
@@ -37,7 +37,7 @@ export default class HomePage extends Component {
                 lead-in to additional content. This card has even longer content
                 than the first to show that equal height action.
               </CardText>
-              <Button>Button</Button>
+              <Button style={{backgroundColor: 'black'}}>Details</Button>
             </CardBody>
           </Card>
           <Card>
@@ -50,7 +50,7 @@ export default class HomePage extends Component {
                 lead-in to additional content. This card has even longer content
                 than the first to show that equal height action.
               </CardText>
-              <Button>Button</Button>
+              <Button style={{backgroundColor: 'black'}}>Details</Button>
             </CardBody>
           </Card>
           <Card>
@@ -63,7 +63,7 @@ export default class HomePage extends Component {
                 lead-in to additional content. This card has even longer content
                 than the first to show that equal height action.
               </CardText>
-              <Button>Button</Button>
+              <Button style={{backgroundColor: 'black'}}>Details</Button>
             </CardBody>
           </Card>
           <Card>
@@ -76,7 +76,7 @@ export default class HomePage extends Component {
                 lead-in to additional content. This card has even longer content
                 than the first to show that equal height action.
               </CardText>
-              <Button>Button</Button>
+              <Button style={{backgroundColor: 'black'}}>Details</Button>
             </CardBody>
           </Card>
         </CardDeck>
@@ -92,7 +92,7 @@ export default class HomePage extends Component {
                 lead-in to additional content. This card has even longer content
                 than the first to show that equal height action.
               </CardText>
-              <Button>Button</Button>
+              <Button style={{backgroundColor: 'black'}}>Details</Button>
             </CardBody>
           </Card>
           <Card>
@@ -105,7 +105,7 @@ export default class HomePage extends Component {
                 lead-in to additional content. This card has even longer content
                 than the first to show that equal height action.
               </CardText>
-              <Button>Button</Button>
+              <Button style={{backgroundColor: 'black'}}>Details</Button>
             </CardBody>
           </Card>
           <Card>
@@ -118,7 +118,7 @@ export default class HomePage extends Component {
                 lead-in to additional content. This card has even longer content
                 than the first to show that equal height action.
               </CardText>
-              <Button>Button</Button>
+              <Button style={{backgroundColor: 'black'}}>Details</Button>
             </CardBody>
           </Card>
           <Card>
@@ -131,7 +131,7 @@ export default class HomePage extends Component {
                 lead-in to additional content. This card has even longer content
                 than the first to show that equal height action.
               </CardText>
-              <Button>Button</Button>
+              <Button style={{backgroundColor: 'black'}}>Details</Button>
             </CardBody>
           </Card>
         </CardDeck>
